@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Roulette - Casas das Apostas - Data Removal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      width: 300px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #ff704d;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ff5742;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Roulette - Casas das Apostas</h1>
+  </header>
+
+  <main>
+    <h2>Data Removal</h2>
+    <p>To remove your data from our system, please enter your email address below:</p>
+
+    <form action="data_removal.php" method="POST">
+      <input type="email" name="email" placeholder="Enter your email address" required>
+      <br>
+      <input type="submit" value="Remove My Data">
+    </form>
+
+    <h3>Data Types</h3>
+    <p>The following types of data will be removed:</p>
+    <ul>
+      <li>Personal information</li>
+      <li>Payment details</li>
+      <li>Account history</li>
+    </ul>
+
+    <h3>Data Retention</h3>
+    <p>The following types of data will be retained:</p>
+    <ul>
+      <li>Anonymized usage statistics</li>
+      <li>Aggregated data for analysis</li>
+    </ul>
+  </main>
+</body>
+</html>
